@@ -1,0 +1,28 @@
+header {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#logo {
+    max-width: 50%;
+    min-width: 150px;
+}
+
+body {
+    width: 50%;
+    margin: auto;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        width: 70%;
+    }
+}
