@@ -4,12 +4,12 @@ header {
 }
 
 #logo {
-    max-width: 50%;
+    max-width: 40%;
     min-width: 150px;
 }
 
 body {
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 

@@ -11,4 +11,4 @@ watch:
 	@fswatch -o0 css/ | xargs -0 -n1 -I{} make
 
 deploy: compiled.css
-	scp -r index.html logo-square.png compiled.css batcave:document_root/vanoix/v2
+	scp -r index.html logo-square.png compiled.css batcave:document_root/vanoix/
