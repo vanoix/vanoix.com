@@ -1,67 +1,367 @@
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
-<title>Vanoix, maison d'excellence depuis 2015.</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          name="viewport">
 
-<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-<link rel="stylesheet" type="text/css" href="css/typebase.css" />
-<link rel="stylesheet" type="text/css" href="css/fonts.css" />
-<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Vanoix, maison d'excellence depuis 2015.</title>
 
-<meta charset="UTF-8">
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="compiled.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img id="logo" src="logo-square.png" alt="Vanoix" />
-    </header>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold title" href="#">Vanoix</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <section id="what">
-        <h3>C'est quoi&nbsp;?</h3>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">A propos
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-offset="90" href="#work">Nos
+                            métiers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-offset="90" href="#customers">Nos
+                            clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-offset="90" href="#team">L'équipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-offset="90" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <p>Une agence web <strong>lyonnaise</strong>, spécialisée dans le <strong>PHP</strong>, plus particulièrement <strong>Symfony</strong>, avec un accent sur la qualité. Le web n'étant pas qu'une histoire de programmation, notre éventail de compétences couvre le spectre nécessaire à la bonne élaboration de vos projets.</p>
+    <section id="about">
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+            <div class="row pt-5 mt-3">
+                <div class="col-md-7 col-lg-7 text-center text-md-left margins">
+                    <div class="pt-lg-5 pt-md-0">
+                        <h1 class="display-4 mt-lg-5 font-weight-bold">
+                            <strong>Conseil & développement PHP</strong>
+                        </h1>
+                        <hr class="hr-light">
+                        <h6>
+                            Vanoix est une agence web lyonnaise, spécialisée
+                            dans le PHP, plus particulièrement Symfony,
+                            avec un accent sur la qualité. Le web n'étant pas
+                            qu'une histoire de programmation, notre éventail
+                            de compétences couvre le spectre nécessaire à la
+                            bonne élaboration de vos projets.
+                        </h6>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-5 logo order-first order-md-last">
+                    <img alt="Un écureuil dans un blason vous fait du rentre dedans"
+                         class="img-fluid"
+                         src="logo-square.png">
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+<div class="container-fluid bg-light pt-2" id="work">
+    <div class="container">
+
+        <section class="section mt-3 mb-3 pb-3" id="services">
+            <h3 class="text-center title my-5 pt-4 pb-5 font-weight-bold">
+                <strong>Nos métiers</strong>
+            </h3>
+
+            <div class="row first-line">
+                <div class="col-md-6 mb-4 text-center">
+                    <div class="card card-body text-left">
+                        <p class="font-weight-bold title font-weight-bold text-uppercase spacing mt-4 mx-4">
+                            <i aria-hidden="true"
+                               class="fas fa-square mr-2 green"></i>
+                            <strong>Accompagnement</strong>
+                        </p>
+                        <p class=" font-small mx-4">
+                            Pour auditer votre code, analyser vos performances,
+                            améliorer vos processus, ou même,
+                            accompagner vos développeurs sur des missions
+                            d'architecture critique…
+                            Vanoix met son expertise et son savoir-faire à la
+                            disposition de votre équipe.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4 text-center">
+                    <div class="card card-body text-left">
+                        <p class="font-weight-bold title font-weight-bold text-uppercase spacing mt-4 mx-4">
+                            <i aria-hidden="true"
+                               class="fas fa-square green mr-2"></i>
+                            <strong>Développement</strong>
+                        </p>
+                        <p class=" font-small mx-4">
+                            Pour des besoins plus conséquents, nous pouvons
+                            également assurer
+                            le développement de votre projet de A à Z. Nous
+                            intervenons de la définition du
+                            besoin – selon votre vision et dans une démarche
+                            agile – jusqu'à la réalisation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row second-line">
+                <div class="col-md-12 mb-4 text-center">
+                    <div class="card card-body text-left">
+                        <p class="font-weight-bold title font-weight-bold text-uppercase spacing mt-4 mx-4">
+                            <i aria-hidden="true"
+                               class="fas fa-square green mr-2"></i>
+                            <strong>Formation</strong>
+                        </p>
+                        <p class=" font-small mx-4">
+                            La technologie évolue en permanence.
+                            De fait, il n’est pas aisé pour vos développeurs de
+                            suivre ce rythme.
+                            Adaptables à vos besoins et dispensées par des
+                            experts, nos formations permettent
+                            à votre équipe technique de rester au top niveau.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="container" id="customers">
+    <section class="mt-3 mb-5 pt-5 pb-5">
+        <h3 class="text-center title my-5 pt-4 pb-4 font-weight-bold">
+            <strong>Nos clients</strong>
+        </h3>
+
+        <div class="gallery row">
+            <div class="mb-3 col-6 col-md-3 pics">
+                <a href="https://diagandgo.fr/">
+                    <img alt="Logo Diag & Go" class="img-fluid"
+                         src="./clients/diagandgo.png">
+                </a>
+            </div>
+            <div class="mb-3 col-6 col-md-3 pics">
+                  <a href="https://jolicode.com/">
+                     <img alt="Logo Jolicode" class="img-fluid"
+                          src="./clients/jolicode.png">
+                  </a>
+            </div>
+            <div class="mb-3 col-6 col-md-3 pics">
+                <a href="https://www.la-canadienne.com/">
+                    <img alt="Logo La canadienne" class="img-fluid"
+                         src="./clients/la-canadienne.png">
+                </a>
+            </div>
+            <div class="mb-3 col-6 col-md-3 pics">
+                <a href="http://viragedigital.fr/">
+                    <img alt="Logo Virage Digital" class="img-fluid"
+                         src="./clients/viragedigital.png">
+                </a>
+            </div>
+            <div class="mb-3 col-6 col-md-3 pics">
+                <a href="https://wertkt.com/">
+                    <img alt="Logo TkT" class="img-fluid" src="./clients/tkt.png">
+                </a>
+            </div>
+            <div class="mb-3 col-6 col-md-3 pics">
+                <a href="https://www.norsys.fr/">
+                    <img alt="Logo Norsys" class="img-fluid"
+                         src="./clients/norsys.png">
+                </a>
+            </div>
+            <div class="mb-3 col-6 col-md-3 pics">
+                <img alt="Logo Orange" class="img-fluid"
+                     src="./clients/orange.png">
+            </div>
+            <div class="mb-3 col-6 col-md-3 pics">
+                <a href="https://www.fk-agency.com/">
+                    <img alt="Logo Fk Agency" class="img-fluid"
+                         src="./clients/fk.png">
+                </a>
+            </div>
+
+        </div>
+
     </section>
 
-    <section id="who">
-        <h3>C'est qui&nbsp;?</h3>
+    <hr>
 
-        <p>Quatre profils complémentaires&nbsp;:</p>
+    <section class="section mb-5" id="team">
 
-        <ul>
-            <li><strong>Alexandre Balmes</strong> : développeur passionné de <abbr title="Domain Driven Design">DDD</abbr> ;</li>
-            <li><strong>Emeric Kasbarian</strong> : ingénieur logiciel, le seul de l'équipe avec un bac+5 ;</li>
-            <li><strong>Geoffrey Bachelet</strong> : développeur amateur de bermudas ;
-            <li><strong>Hervé Commowick</strong> : administrateur système et réseau féru de barbe.
+        <h3 class="text-center title mt-5 pt-4 font-weight-bold">
+            <strong>L'équipe</strong>
+        </h3>
+        <p class="text-center w-responsive mb-5 pb-4 mx-auto">Quatre profils
+            complémentaires.</p>
+
+        <div class="row text-center">
+            <div class="card-group">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="avatar mx-auto p-3">
+                            <img alt="Alexandre Balmes"
+                                 class="rounded-circle img-fluid"
+                                 src="./profilepic/4a21rq10_400x400.jpg">
+                        </div>
+
+                        <div class="card-body">
+                            <h6 class="font-weight-bold title">Alexandre
+                                Balmes</h6>
+                            <p class="font-small grey">Développeur</p>
+
+                            <p>
+                                Il ❤️ la conception et l'architecture.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="avatar mx-auto p-3">
+                            <img alt="Emeric Kasbarian"
+                                 class="rounded-circle img-fluid"
+                                 src="./profilepic/qgP5Y5e6_400x400.jpg">
+                        </div>
+
+                        <div class="card-body">
+                            <h6 class="font-weight-bold title">Emeric
+                                Kasbarian</h6>
+                            <p class="font-small grey">Ingénieur logiciel</p>
+
+                            <p>
+                                Le seul de l'équipe avec un bac+5.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="avatar mx-auto p-3">
+                            <img alt="Geoffrey Bachelet"
+                                 class="rounded-circle img-fluid"
+                                 src="./profilepic/LOSeBU5B_400x400.jpg">
+                        </div>
+
+                        <div class="card-body">
+                            <h6 class="font-weight-bold title">Geoffrey
+                                Bachelet</h6>
+                            <p class="font-small grey">Développeur</p>
+
+                            <p>
+                                Amateur de bermudas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="avatar mx-auto p-3">
+                            <img alt="Hervé Commowick"
+                                 class="rounded-circle img-fluid"
+                                 src="./profilepic/IVSV2WuF_400x400.jpg">
+                        </div>
+
+                        <div class="card-body">
+                            <h6 class="font-weight-bold title">Hervé
+                                Commowick</h6>
+                            <p class="font-small grey">Administrateur système et
+                                réseau</p>
+
+                            <p>
+                                Féru de barbe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="section mb-5" id="contact">
+        <h3 class="text-center title mt-5 pt-4 font-weight-bold">
+            <strong>Nous contacter</strong>
+        </h3>
+
+        <p class="text-center mb-5 pb-4 w-responsive mx-auto">
+            Envie de discuter ? Écrivez-nous, nous serons ravis d’échanger avec
+            vous au sujet de vos projets.
+        </p>
+
+        <ul class="text-center list-unstyled list-inline">
+            <li class="list-inline-item">
+                <i class="fas fa-map-marker-alt fa-2x title"></i>
+                <p>Nous sommes à Lyon mais <br> nous nous déplaçons !</p>
+            </li>
+
+            <li class="list-inline-item">
+                <i class="fas fa-envelope fa-2x title"></i>
+                <p>
+                    <a href="mailto:hello@vanoix.com">hello@vanoix.com</a>
+                    <br>&nbsp;
+                </p>
+            </li>
         </ul>
     </section>
+</div>
 
-    <section id="skills">
-        <h3>Nos métiers</h3>
+<footer class="page-footer text-center text-md-left pt-0">
+    <div style="background-color: #c8a97d;">
+        <div class="container">
+            <div class="row py-4 d-flex align-items-center">
+                <div class="col-md-12 text-center">
+                    <h6 class="mb-0">
+                        L'écureuil a été dessiné par <a
+                            href="http://www.paulinedeturckheim.net/">Pauline</a>,
+                        fantastique graphiste avec qui nous aimons travailler&nbsp;!
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <h4>Accompagnement</h4>
+    <div class="container mt-4 text-center">
+        <div class="row mt-3">
+            <div class="col-md-12 mb-4">
+                <span class="font-weight-bold">&copy; Vanoix 2015-2152</span>
+            </div>
+        </div>
+    </div>
+</footer>
 
-        <p class="hug">Pour auditer votre code, analyser vos performances, améliorer vos processus, ou même, accompagner vos développeurs sur des missions d'architecture critique… Vanoix met son expertise et son savoir-faire à la disposition de votre équipe.</p>
-
-        <h4>Développement</h4>
-
-        <p class="hug">Pour des besoins plus conséquents, nous pouvons également assurer le développement de votre projet de A à Z. Nous intervenons de la définition du besoin – selon votre vision et dans une démarche agile – jusqu'à la réalisation.</p>
-
-        <h4>Formation</h4>
-
-        <p class="hug">La technologie évolue en permanence. De fait, il n’est pas aisé pour vos développeurs de suivre ce rythme. Adaptables à vos besoins et dispensées par des experts, nos formations permettent à votre équipe technique de rester au top niveau.</p>
-    </section>
-
-    <section id="contact">
-        <h3>Nous contacter</h3>
-
-        <p>Envie de discuter&nbsp;? <a href="mailto:hello@vanoix.com">Écrivez-nous</a>, nous serons ravis d’échanger avec vous au sujet de vos projets.</p>
-    </section>
-
-    <section id="squirrel">
-        <h3>L'écureuil</h3>
-        <p>Il a été dessiné par <a href="http://www.paulinedeturckheim.net/">Pauline</a>, fantastique graphiste avec qui nous aimons travailler&nbsp;! N'hésitez pas à la contacter&nbsp;:-)</p>
-    </section>
-
-    <footer>
-    &copy; Vanoix 2015-2152
-    </footer>
+<script crossorigin="anonymous"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
