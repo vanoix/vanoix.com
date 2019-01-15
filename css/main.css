@@ -1,39 +1,133 @@
-header {
-    text-align: center;
-    margin-top: 2rem;
+html, body {
+    font-family: "Source Sans Pro", serif;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    height: 100%;
 }
 
-#logo {
-    max-width: 40%;
-    min-width: 150px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cantata One", sans-serif;
 }
 
-body {
-    width: 60%;
-    margin: auto;
+a, a:hover {
+    color: #69491c;
+}
+
+.green {
+    color: #bcc82a;
+}
+
+header, #about {
+    height: 100%!important;
+}
+
+#services .first-line .card {
+    min-height: 242px;
+}
+
+#team .card {
+    min-height: 426px;
 }
 
 footer {
-    margin-top: 2rem;
-    text-align: center;
-    font-size: 0.7rem;
-    margin-bottom: 2rem;
+    background-color: #1c2331;
+    color: #fff;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    html {
-        font-size: 250%;
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    #about {
+        margin-top: 150px;
     }
 
-    body {
-        width: 70%;
+    .logo {
+        width: 300px;
+        position: absolute;
+        top: 10%;
+        left:0;
+        right:0;
+        margin: 0 auto;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
     }
 }
 
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    body {
-        width: 70%;
+@media (max-width: 320px) and (orientation: portrait) {
+    h1.display-4 {
+        width: 276px;
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: .8rem;
+    }
+
+    .logo {
+        width: 250px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
     }
 }
+
+@media (min-width: 768px) and (max-width: 768px) {
+    h1.display-4 {
+        width: 276px;
+        font-size: 3rem;
+    }
+
+    .logo {
+        width: 200px;
+        position: absolute;
+        top: 31%;
+        right:15%;
+    }
+}
+
+@media (min-width: 683px) and (max-width: 992px) {
+    h1.display-4 {
+        width: 276px;
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .logo {
+        width: 200px;
+        position: absolute;
+        top: 30%;
+        right: 15%;
+    }
+}
+
+@media (min-width: 658px) and (max-width: 992px) {
+    #services .first-line .card {
+        min-height: 266px;
+    }
+
+    #team .card {
+        min-height: 477px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .pt-lg-5 {
+        padding: 0;
+    }
+    .logo {
+        margin-top: 71px;
+    }
+}
+
+

@@ -4,6 +4,7 @@
   font-weight: 400;
   src: local('Cantata One'), local('CantataOne-Regular'), url(http://fonts.gstatic.com/s/cantataone/v6/Ur66QXTDfN1RjqAm41DRZZ0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
