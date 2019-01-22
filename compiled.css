@@ -35,8 +35,13 @@ a, a:hover {
     color: #bcc82a;
 }
 
-header, #about {
-    height: 100%!important;
+header {
+    min-height: 100%!important;
+}
+
+#about {
+    padding-top: 56px;
+    height: 100%;
 }
 
 #services .first-line .card {
@@ -56,91 +61,3 @@ footer a {
     color: #fff;
     text-decoration: underline;
 }
-
-@media screen and (max-width: 768px) and (orientation: portrait) {
-    #about {
-        margin-top: 150px;
-    }
-
-    .logo {
-        width: 300px;
-        position: absolute;
-        top: 10%;
-        left:0;
-        right:0;
-        margin: 0 auto;
-    }
-
-    .display-4 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 320px) and (orientation: portrait) {
-    h1.display-4 {
-        width: 276px;
-        font-size: 1.5rem;
-    }
-
-    h6 {
-        font-size: .8rem;
-    }
-
-    .logo {
-        width: 250px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 768px) {
-    h1.display-4 {
-        width: 276px;
-        font-size: 3rem;
-    }
-
-    .logo {
-        width: 200px;
-        position: absolute;
-        top: 31%;
-        right:15%;
-    }
-}
-
-@media (min-width: 683px) and (max-width: 992px) {
-    h1.display-4 {
-        width: 276px;
-        font-size: 2.5rem;
-        text-align: left;
-    }
-
-    .logo {
-        width: 200px;
-        position: absolute;
-        top: 30%;
-        right: 15%;
-    }
-}
-
-@media (min-width: 658px) and (max-width: 992px) {
-    #services .first-line .card {
-        min-height: 266px;
-    }
-
-    #team .card {
-        min-height: 477px;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    .pt-lg-5 {
-        padding: 0;
-    }
-    .logo {
-        margin-top: 71px;
-    }
-}
-
-
