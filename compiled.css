@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Cantata One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cantata One'), local('CantataOne-Regular'), url(http://fonts.gstatic.com/s/cantataone/v6/Ur66QXTDfN1RjqAm41DRZZ0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMw1o1eFRj7wYC6JbISqOjY.ttf) format('truetype');
+}
 html, body {
     font-family: "Source Sans Pro", serif;
     -webkit-font-smoothing: antialiased;
