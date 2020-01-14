@@ -349,6 +349,30 @@
     </section>
 </div>
 
+<section class="section mb-5" id="incentive">
+    <h3 class="text-center title mt-5 pt-4 font-weight-bold">
+        <strong>Que pouvons-nous faire pour vous ?</strong>
+    </h3>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <form class="form-inline mt-4 pt-4 col-auto">
+                <select name="whoami" id="whoami" class="form-control">
+                    <option selected value="default">Je suis...</option>
+                </select>
+                &nbsp; et je souhaite &nbsp;
+                <select name="want" id="want" class="form-control">
+                    <option selected value="default">...</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="row justify-content-center">
+            <div id="incentive-text" class="pt-5 col-6"></div>
+        </div>
+    </div>
+</section>
+
 <footer class="page-footer text-center text-md-left pt-0">
     <div style="background-color: #c8a97d;">
         <div class="container">
@@ -373,6 +397,16 @@
     </div>
 </footer>
 
+<script crossorigin="anonymous"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thibault/strike-js@master/strike.css" type="text/css" charset="utf-8">
 <script src="https://cdn.jsdelivr.net/gh/thibault/strike-js@master/strike.js"></script>
 <script>
@@ -382,16 +416,130 @@
         'Contre la stigmatisation systématique des plus fragiles.',
         'Ce site est en grève.',
     ]);
+
+    $(document).ready(function(){
+        var data = JSON.parse(document.getElementById('data').innerHTML);
+        var whoami = data.jobs;
+
+        $.each(whoami, function(index, jobs) {
+            $('#whoami').append("<option name=" + index + ">" + jobs.value + "</option>");
+        });
+
+        $('#whoami').change(function() {
+            var current = $(this).children("option:selected").attr("name");
+            var choices = whoami[current].choices;
+            $('#want').find('option:not(:first)').remove().end();
+            $('#incentive-text').empty();
+
+            $.each(choices, function(current, choice) {
+                var help = data.choices[choice];
+                $('#want').append("<option name=" + help.key +">" + help.value + "</option>");
+            });
+        });
+
+        $('#want').change(function () {
+            var whoami = $('#whoami').children("option:selected").attr("name");
+            var want = $(this).children("option:selected").attr("name");
+            var text = whoami + "-" + want;
+            var content = data.text;
+
+            $('#incentive-text').html("<p>" + content[text] +" <a href=\"mailto:hello@vanoix.com?subject=[Prise de contact]\">Contactez-nous !</a></p>");
+        });
+
+        $('#incentive').click(function(event){
+            if ("incentive" === event.target.id) {
+                $(this).hide();
+            }
+        })
+    });
 </script>
 
-<script crossorigin="anonymous"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script id="data" type="application/json">
+    {
+        "jobs": {
+            "dev": {
+                "value": "Je suis développeur",
+                "choices": [
+                    "formation",
+                    "techadvice"
+                ]
+            },
+            "archi": {
+                "value": "Je suis architecte",
+                "choices": [
+                    "help",
+                    "techadvice"
+                ]
+            },
+            "cto": {
+                "value": "Je suis CTO",
+                "choices": [
+                    "help",
+                    "formation",
+                    "techadvice",
+                    "service"
+                ]
+            },
+            "ceo": {
+                "value": "Je suis décideur",
+                "choices": [
+                    "formation",
+                    "busadvice",
+                    "service"
+                ]
+            },
+            "thirdparty": {
+                "value": "Je suis un tier",
+                "choices": [
+                    "help",
+                    "techadvice",
+                    "service"
+                ]
+            }
+        },
+        "choices": {
+            "formation": {
+                "key": "formation",
+                "value": "une formation"
+            },
+            "help": {
+                "key": "help",
+                "value": "de l'aide sur une projet"
+            },
+            "techadvice": {
+                "key": "techadvice",
+                "value": "de l'aide à la conception/architecture"
+            },
+            "busadvice": {
+                "key": "busadvice",
+                "value": "de l'aide à l'amorcage de projet"
+            },
+            "audit": {
+                "key": "audit",
+                "value": "un audit"
+            },
+            "service": {
+                "key": "service",
+                "value": "de la prestation"
+            }
+        },
+        "text": {
+            "dev-formation": "Vanoix propose des formations à destination des développeurs.\n Dites-nous tout sur votre contexte projet, vos contraintes et nous trouverons des solutions ensemble pour améliorer votre quotidien",
+            "dev-techadvice": "Vous pouvez parfois être coincé par des problèmes d'architectures et/ou de conception. Comment faire mieux avec vos contraintes ? Nous pouvons vous aider.",
+            "archi-help": "Nous intervenons sur des projets complexes, la dette technique est rééllement notre quotidien et nous avons mis en place nos process afin de permettre aux applications legacy d'avancer dans le bon sens.",
+            "archi-techadvice": "Vous connaissez votre architecture cible idéale mais avez besoin de la confronter à d'autres expériences. Nos différentes expériences et nos connaissances nous permettent de vous faire des retours rapide et sans parti-pris.",
+            "cto-help": "Vos équipes sont un peu dépassés par les évènements ou avez besoin de soutien \"lead\" temporaire. N'hésitez pas.",
+            "cto-formation": "Vos équipes ont besoin de formation dans un contexte projet précis. Nous orientons ces formations pour suivre votre direction technique.",
+            "cto-techadvice": "Vous souhaitez le retour de pairs, de l'aide pour communiquer avec les décideurs métiers, des retours... Nous pouvons vous aider.",
+            "cto-service": "Vous avez besoin de prestation de service afin de poser les fondations de votre projet. Nous sommes la.",
+            "ceo-formation": "Vous avez besoin de former vos collaborateurs et cherchez des formations éligibles CPF, nous pouvons vous aider.",
+            "ceo-busadvice": "Vous avez un projet mais n'avez pas d'idée précise des contraintes techniques, des choix technologiques et/ou de la meilleure façon d'avancer. Faites-nous confiance.",
+            "ceo-service": "Vous êtes à la recherche d'une prestation de service mais ne souhaitez pas rencontrer les travers \"agence\". Nous ne sommes pas une agence et ne le serons jamais.",
+            "thirdparty-help": "Vous avez besoin de soutien technique pour le compte de tiers mais ne souhaitez pas vous engager avec n'importe qui. Vanoix peut vous aider.",
+            "thirdparty-techadvice": "Vous souhaitez valider vos propositions avant présentation au client. Nous pouvons vous faire les retours sur votre proposition pour la rendre la plus effective possible.",
+            "thirdparty-service": "Vous cherchez tout simplement de la prestation de service. Nous sommes ouvert à la discussions mais sachez-le, nous ne sommes pas exécutant."
+        }
+    }
+</script>
 </body>
 </html>
