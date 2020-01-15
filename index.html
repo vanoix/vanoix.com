@@ -421,6 +421,8 @@
         var data = JSON.parse(document.getElementById('data').innerHTML);
         var whoami = data.jobs;
 
+        $('body').addClass('incentive-opened');
+
         $.each(whoami, function(index, jobs) {
             $('#whoami').append("<option name=" + index + ">" + jobs.value + "</option>");
         });
@@ -446,9 +448,17 @@
             $('#incentive-text').html("<p>" + content[text] +" <a href=\"mailto:hello@vanoix.com?subject=[Prise de contact]\">Contactez-nous !</a></p>");
         });
 
-        $('#incentive').click(function(event){
-            if ("incentive" === event.target.id) {
-                $(this).hide();
+        $('body.incentive-opened').click(function(event) {
+            if ("incentive" === event.target.id || null !== event.target.closest("nav")) {
+                $('#incentive').hide();
+                $('body').removeClass('incentive-opened');
+            }
+        });
+
+        $(document).keydown(function(event) {
+            if ("Escape" === event.code) {
+                $('#incentive').hide();
+                $('body').removeClass('incentive-opened');
             }
         })
     });
