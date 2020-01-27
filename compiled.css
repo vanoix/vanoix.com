@@ -47,6 +47,14 @@ header, #about {
     min-height: 426px;
 }
 
+#incentive p {
+    font-size: 1.5em;
+}
+
+#incentive a {
+    font-weight: bold;
+}
+
 footer {
     background-color: #1c2331;
     color: #fff;
