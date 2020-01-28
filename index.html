@@ -445,7 +445,12 @@
             var text = whoami + "-" + want;
             var content = data.text;
 
-            $('#incentive-text').html("<p>" + content[text] +" <a href=\"mailto:hello@vanoix.com?subject=[Prise de contact]\">Contactez-nous !</a></p>");
+            console.log(null == want);
+            if (null == want) {
+                $('#incentive-text').empty();
+            } else {
+                $('#incentive-text').html("<p>" + content[text] +" <a href=\"mailto:hello@vanoix.com?subject=[Prise de contact]\">Contactez-nous !</a></p>");
+            }
         });
 
     });
