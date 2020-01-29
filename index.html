@@ -428,6 +428,13 @@
 
         $('#whoami').change(function() {
             var current = $(this).children("option:selected").attr("name");
+
+            if (null == current) {
+                $('#incentive-text').empty();
+                $('#want').find('option:not(:first)').remove().end();
+                return;
+            }
+
             var choices = whoami[current].choices;
 
             $('#want').find('option:not(:first)').remove().end();
