@@ -457,6 +457,11 @@
                 return;
             }
 
+            if ('formation' === want) {
+                $('#incentive-text').html("<p>" + content[text] +" Plus d'informations sur <a href=\"https://formation.vanoix.com\">notre site dédié !</a></p>");
+                return;
+            }
+
             $('#incentive-text').html("<p>" + content[text] +" <a href=\"mailto:hello@vanoix.com?subject=[Prise de contact]\">Contactez-nous !</a></p>");
         });
 
