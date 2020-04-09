@@ -26,6 +26,10 @@ header, #about {
     height: 100%!important;
 }
 
+header.page {
+    height: auto!important;
+}
+
 #services .first-line .card {
     min-height: 242px;
 }
