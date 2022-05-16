@@ -1,0 +1,33 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 12
+
+      - name: Install and build assets
+        run: |
+          npm install
+          npm run build
+          npx prettier --parser html --write ./public/*.html
+
+      - name: Push changes
+        uses: ptienchuan/deploy-github-pages-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          source-directory: "public"
