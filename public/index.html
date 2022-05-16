@@ -2,16 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          name="viewport">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 
     <title>Vanoix, maison d'excellence depuis 2015.</title>
 
-    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-          rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
-          rel="stylesheet">
-    <link href="compiled.css" rel="stylesheet">
+    <link href="build/front/app.css" rel="stylesheet" />
+
+    <script src="build/front/runtime.js" defer></script>
+    <script src="build/front/app.js" defer></script>
+
 </head>
 <body>
 <header>
@@ -71,7 +70,7 @@
                 <div class="col-md-5 col-lg-5 logo order-first order-md-last">
                     <img alt="Un écureuil dans un blason vous fait du rentre dedans"
                          class="img-fluid"
-                         src="logo-square.png">
+                         src="build/front/images/logo/logo-square.png">
                 </div>
             </div>
         </div>
@@ -183,45 +182,45 @@
             <div class="mb-3 col-6 col-md-3 pics">
                 <a href="https://diagandgo.fr/" target="_blank">
                     <img alt="Logo Diag & Go" class="img-fluid"
-                         src="./clients/diagandgo.png">
+                         src="build/front/images/clients/diagandgo.png">
                 </a>
             </div>
             <div class="mb-3 col-6 col-md-3 pics">
                   <a href="https://jolicode.com/" target="_blank">
                      <img alt="Logo Jolicode" class="img-fluid"
-                          src="./clients/jolicode.png">
+                          src="build/front/images/clients/jolicode.png">
                   </a>
             </div>
             <div class="mb-3 col-6 col-md-3 pics">
                 <a href="https://www.la-canadienne.com/" target="_blank">
                     <img alt="Logo La canadienne" class="img-fluid"
-                         src="./clients/la-canadienne.png">
+                         src="build/front/images/clients/la-canadienne.png">
                 </a>
             </div>
             <div class="mb-3 col-6 col-md-3 pics">
                 <img alt="Logo Virage Digital" class="img-fluid"
-                     src="./clients/viragedigital.png">
+                     src="build/front/images/clients/viragedigital.png">
             </div>
             <div class="mb-3 col-6 col-md-3 pics">
                 <a href="https://wertkt.com/" target="_blank">
                     <img alt="Logo TkT" class="img-fluid"
-                         src="./clients/tkt.png">
+                         src="build/front/images/clients/tkt.png">
                 </a>
             </div>
             <div class="mb-3 col-6 col-md-3 pics">
                 <a href="https://www.norsys.fr/" target="_blank">
                     <img alt="Logo Norsys" class="img-fluid"
-                         src="./clients/norsys.png">
+                         src="build/front/images/clients/norsys.png">
                 </a>
             </div>
             <div class="mb-3 col-6 col-md-3 pics">
                 <img alt="Logo Orange" class="img-fluid"
-                     src="./clients/orange.png">
+                     src="build/front/images/clients/orange.png">
             </div>
             <div class="mb-3 col-6 col-md-3 pics">
                 <a href="https://www.fk-agency.com/" target="_blank">
                     <img alt="Logo Fk Agency" class="img-fluid"
-                         src="./clients/fk.png">
+                         src="build/front/images/clients/fk.png">
                 </a>
             </div>
 
@@ -246,7 +245,7 @@
                         <div class="avatar mx-auto p-3">
                             <img alt="Alexandre Balmes"
                                  class="rounded-circle img-fluid"
-                                 src="./profilepic/alexandre.jpg">
+                                 src="build/front/images/profilepic/alexandre.jpg">
                         </div>
 
                         <div class="card-body">
@@ -266,7 +265,7 @@
                         <div class="avatar mx-auto p-3">
                             <img alt="Emeric Kasbarian"
                                  class="rounded-circle img-fluid"
-                                 src="./profilepic/emeric.jpg">
+                                 src="build/front/images/profilepic/emeric.jpg">
                         </div>
 
                         <div class="card-body">
@@ -286,7 +285,7 @@
                         <div class="avatar mx-auto p-3">
                             <img alt="Jeremy James"
                                  class="rounded-circle img-fluid"
-                                 src="./profilepic/jeremy.jpg">
+                                 src="build/front/images/profilepic/jeremy.jpg">
                         </div>
 
                         <div class="card-body">
@@ -306,7 +305,7 @@
                         <div class="avatar mx-auto p-3">
                             <img alt="Geoffrey Bachelet"
                                  class="rounded-circle img-fluid"
-                                 src="./profilepic/geoffrey.jpg">
+                                 src="build/front/images/profilepic/geoffrey.jpg">
                         </div>
 
                         <div class="card-body">
@@ -326,7 +325,7 @@
                         <div class="avatar mx-auto p-3">
                             <img alt="Hervé Commowick"
                                  class="rounded-circle img-fluid"
-                                 src="./profilepic/herve.jpg">
+                                 src="build/front/images/profilepic/herve.jpg">
                         </div>
 
                         <div class="card-body">
@@ -401,197 +400,6 @@
     </div>
 </footer>
 
-<script crossorigin="anonymous"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thibault/strike-js@master/strike.css" type="text/css" charset="utf-8">
-<script src="https://cdn.jsdelivr.net/gh/thibault/strike-js@master/strike.js"></script>
-<script>
-    strike(new Date('2019-12-05'), [
-        'Contre la destruction de notre modèle social.',
-        'Contre l\'augmentation croissante des inégalités.',
-        'Contre la stigmatisation systématique des plus fragiles.',
-        'Ce site est en grève.',
-    ]);
-
-    $(document).ready(function() {
-        var data = JSON.parse(document.getElementById('data').innerHTML);
-        var whoami = data.jobs;
-
-        $.each(whoami, function(index, jobs) {
-            $('#whoami').append("<option name=" + index + ">" + jobs.value + "</option>");
-        });
-
-        $('#whoami').change(function() {
-            var current = $(this).children("option:selected").attr("name");
-
-            if (null == current) {
-                $('#incentive-text').empty();
-                $('#want').find('option:not(:first)').remove().end();
-                return;
-            }
-
-            var choices = whoami[current].choices;
-
-            $('#want').find('option:not(:first)').remove().end();
-            $('#incentive-text').empty();
-
-            $.each(choices, function(current, choice) {
-                var help = data.choices[choice];
-                $('#want').append("<option name=" + help.key +">" + help.value + "</option>");
-            });
-        });
-
-        $('#want').change(function () {
-            var whoami = $('#whoami').children("option:selected").attr("name");
-            var want = $(this).children("option:selected").attr("name");
-            var text = whoami + "-" + want;
-            var content = data.text;
-
-            if (null == want) {
-                $('#incentive-text').empty();
-                return;
-            }
-
-            if ('formation' === want) {
-                $('#incentive-text').html("<p>" + content[text] +" Plus d'informations sur <a href=\"https://formation.vanoix.com\">notre site dédié !</a></p>");
-                return;
-            }
-
-            $('#incentive-text').html("<p>" + content[text] +" <a href=\"mailto:hello@vanoix.com?subject=[Prise de contact]\">Contactez-nous !</a></p>");
-        });
-
-    });
-</script>
-
-<script id="data" type="application/json">
-    {
-        "jobs": {
-            "dev": {
-                "value": "Je suis développeur·euse",
-                "choices": [
-                    "formation",
-                    "techadvice"
-                ]
-            },
-            "archi": {
-                "value": "Je suis architecte",
-                "choices": [
-                    "help",
-                    "techadvice"
-                ]
-            },
-            "cto": {
-                "value": "Je suis CTO",
-                "choices": [
-                    "help",
-                    "formation",
-                    "techadvice",
-                    "service",
-                    "audit"
-                ]
-            },
-            "ceo": {
-                "value": "Je suis porteur·euse de projet",
-                "choices": [
-                    "formation",
-                    "busadvice",
-                    "service",
-                    "audit"
-                ]
-            },
-            "thirdparty": {
-                "value": "Je représente un tiers",
-                "choices": [
-                    "help",
-                    "techadvice",
-                    "service",
-                    "audit"
-                ]
-            },
-            "community": {
-                "value": "Je représente un meetup, une conférence",
-                "choices": [
-                    "conf",
-                    "interview-podcast"
-                ]
-            },
-            "fan": {
-                "value": "Je suis fan",
-                "choices": [
-                    "sticker"
-                ]
-            }
-        },
-        "choices": {
-            "formation": {
-                "key": "formation",
-                "value": "une formation"
-            },
-            "help": {
-                "key": "help",
-                "value": "de l'aide sur un projet"
-            },
-            "techadvice": {
-                "key": "techadvice",
-                "value": "de l'aide à la conception/architecture"
-            },
-            "busadvice": {
-                "key": "busadvice",
-                "value": "de l'aide à l'amorcage de projet"
-            },
-            "audit": {
-                "key": "audit",
-                "value": "un audit"
-            },
-            "service": {
-                "key": "service",
-                "value": "de la prestation"
-            },
-            "conf": {
-                "key": "conf",
-                "value": "organiser un meetup/conférence/BBL..."
-            },
-            "sticker": {
-                "key": "sticker",
-                "value": "des stickers Vanoix"
-            },
-            "interview-podcast": {
-                "key": "itw",
-                "value": "faire une interview et/ou un podcast"
-            }
-        },
-        "text": {
-            "dev-formation": "Vanoix propose des formations à destination des développeurs·euses. Dites-nous tout sur votre contexte projet, vos contraintes et nous trouverons des solutions ensemble pour améliorer votre quotidien.",
-            "dev-techadvice": "Vous pouvez parfois être bloqué par des problèmes d'architectures ou encore de conception. Comment faire mieux avec vos contraintes ?",
-            "archi-help": "Nous intervenons sur des projets complexes. La dette technique est réellement notre quotidien et nous avons mis en place des process afin de permettre aux applications legacy d'avancer sur le droit chemin.",
-            "archi-techadvice": "Vous connaissez votre architecture cible idéale, mais avez besoin de la confronter à d'autres expériences. Nos différentes expériences et nos connaissances nous permettent de vous faire des retours rapides et sans parti pris.",
-            "cto-help": "Vos équipes sont un peu dépassées par les évènements ou vous avez besoin de soutien \"lead\" temporaire.",
-            "cto-formation": "Vos équipes ont besoin de formation dans un contexte projet précis. Nous orientons ces formations pour suivre votre direction technique.",
-            "cto-techadvice": "Vous souhaitez le retour de pairs, de l'aide pour communiquer avec les décideurs·euses métiers, des retours...",
-            "cto-service": "Vous avez besoin de prestation de service afin de poser les fondations de votre projet.",
-            "cto-audit": "Vous voulez faire un audit de votre application/SI et êtes à la recherche de préconisations.",
-            "ceo-formation": "Vous avez besoin de former vos collaborateurs·trices et cherchez des formations éligibles CPF.",
-            "ceo-busadvice": "Vous avez un projet, mais n'avez pas d'idée précise des contraintes techniques, des choix technologiques ou encore de la meilleure façon d'avancer.",
-            "ceo-service": "Vous êtes à la recherche d'une prestation de service, mais ne souhaitez pas rencontrer les travers \"agence\". Nous ne sommes pas une agence et ne le serons jamais.",
-            "ceo-audit": "Vous voulez rapidement savoir si votre projet avance avec un regard neuf, sans parti pris mais surtout humain.",
-            "thirdparty-help": "Vous avez besoin de soutien technique pour le compte de tiers, mais ne souhaitez pas vous engager avec n'importe qui.",
-            "thirdparty-techadvice": "Vous souhaitez valider vos propositions avant présentation au client final. Nous pouvons vous faire les retours sur votre proposition pour la rendre la plus effective possible.",
-            "thirdparty-service": "Vous cherchez tout simplement de la prestation de service. Nous sommes ouverts à la discussion, mais sachez-le, nous ne sommes pas de simples exécutants.",
-            "thirdparty-audit": "Vous souhaitez effectuer un état des lieux avant reprise de projet. Donnez-nous vos principaux KPI, nous vous apporterons des réponses.",
-            "community-conf": "Vous organisez des conférences, Meetups, Brown Bag Lunch et souhaitez savoir si nous pouvons être présents.",
-            "community-itw": "L'approche de la société et/ou de ses collaborateurs vous intéresse. Nous serions ravis d'échanger avec vous !",
-            "fan-sticker": "❤️ Nous aussi on t'aime ❤️. Envoie-nous un email avec ton adresse postale et nous t'enverrons des stickers en retour."
-        }
-    }
-</script>
 <script type="text/javascript">
     var _paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */

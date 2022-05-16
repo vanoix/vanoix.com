@@ -1,18 +1,14 @@
-@font-face {
-  font-family: 'Cantata One';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Cantata One'), local('CantataOne-Regular'), url(https://fonts.gstatic.com/s/cantataone/v6/Ur66QXTDfN1RjqAm41DRZZ0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
-}
+//@import "~tailwindcss/base";
+//@import "~tailwindcss/components";
+//@import "~tailwindcss/utilities";
 
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMw1o1eFRj7wYC6JbISqOjY.ttf) format('truetype');
-}
+@import '~fontawesome-free/css/all.min';
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Source+Sans+Pro:wght@300&display=swap');
+
 html, body {
-    font-family: "Source Sans Pro", serif;
+    font-family: "Source Sans Pro", sans-serif;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
     height: 100%;
@@ -24,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Cantata One", sans-serif;
+    font-family: "Cantata One", serif;
 }
 
 a, a:hover {
@@ -158,4 +154,3 @@ footer a {
         padding-top: 0 !important;
     }
 }
-
